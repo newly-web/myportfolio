@@ -1,0 +1,18 @@
+.btn{
+    display: inline-block;
+    font-weight: 600;
+    text-decoration:none;
+    letter-spacing: -0.05em;
+    background-color: var(--col-medgrey);
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    color: var(--col-white);
+    box-shadow:0px 10px 20px rgb(168, 162, 158, 0.5),
+            0 6px 6px rgb(168, 162, 158,0.5), 0 0 10px -10px var(--col-medgrey);
+    transition: transform 0.9s box-shadow 0.5s;
+}
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 14px 28px rgba(168, 162, 158, 0.6),
+            0 10px 10px rgb(168, 162, 158, 0.6), 0 0 10px -10px var(--col-medgrey);
+}
