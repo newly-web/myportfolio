@@ -1,0 +1,197 @@
+body{
+
+}
+.about{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.about__img {
+    width: 11rem;
+    border-radius: 100%;
+    height: 10rem;
+}
+.about__sub {
+    font-size: var(--size-sm);
+    color: var(--col-medgrey);
+    line-height: 0.9;
+
+}
+.about__title{
+    letter-spacing: -0.02em;
+    font-size: var(--size-4xl);
+    background: radial-gradient(circle, #FFD700 50%, #8a6a1b 100%);
+        /* Use the gradient variable */
+        -webkit-background-clip: text;
+        /* Clip the background to the text */
+        -webkit-text-fill-color: transparent;
+        /* Make the fill color transparent */
+        background-clip: text;
+        /* Standard property for modern browsers */
+        text-fill-color: transparent;
+}
+.about__paragraph{
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color: var(--col-medgrey);
+}
+.about__button{
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+    font-size: var(--size-sm);
+}
+/* we wanna have icons vertical for desk and horizontal for phones */
+.desk{
+    display: none;
+}
+/* Media Queries */
+/* xs */
+@media (min-width: 475px) {  
+    .about {
+            gap: 1.5rem;
+        }
+    
+        .about__img {
+            width: 11.5rem;
+            height: 10.5rem;
+        }
+    
+        .about__sub {
+            font-size: var(--size-md);
+        }
+    
+        .about__title {
+            font-size: var(--size-5xl);
+        }
+
+        .about__paragraph {
+            font-size: var(--size-base);
+        }
+    
+        .about__button {
+
+            font-size: var(--size-base);
+        }
+    }
+
+/* sm */
+/* @media (min-width: 640px) {
+    
+    } */
+
+/* md */
+/* @media (min-width: 768px) {
+
+    } */
+
+/* lg */
+@media (min-width: 1024px) {
+    
+        .about__img {
+            display:none;
+        }
+        .about__desk__image{
+            width: 30rem;
+            display: block;
+        }
+        .about__sub {
+            font-size: var(--size-lg);
+        }
+    
+        .about__title {
+            display: none;
+        }
+        .desk{
+            display: flex;
+            gap: 2rem;
+        }
+            div.one{
+                margin-top: 9rem;
+                    margin-right: -5rem;
+                    align-self: top;
+            }
+            .desk .about__desk__title1{
+                background: radial-gradient(circle, #FFD700 50%, #8a6a1b 100%);
+                    /* Use the gradient variable */
+                    -webkit-background-clip: text;
+                    /* Clip the background to the text */
+                    -webkit-text-fill-color: transparent;
+                    /* Make the fill color transparent */
+                    background-clip: text;
+                    /* Standard property for modern browsers */
+                    text-fill-color: transparent;
+                font-size: var(--size-7xl)
+            }
+            div.two{
+                align-self: center;
+            }
+            .about__desk__title2{
+                background: radial-gradient(circle, #FFD700 50%, #8a6a1b 100%);
+                    /* Use the gradient variable */
+                    -webkit-background-clip: text;
+                    /* Clip the background to the text */
+                    -webkit-text-fill-color: transparent;
+                    /* Make the fill color transparent */
+                    background-clip: text;
+                    /* Standard property for modern browsers */
+                    text-fill-color: transparent;
+                font-size: var(--size-7xl)
+            }
+            p.about__desk__paragraph{
+                color: var(--col-medgrey);
+                font-size: var(--size-xl);
+                margin-top: 0.7rem;
+                text-align: center;
+            }
+
+            i.about__desk__icon{
+                margin-top: 2rem;
+                color: var(--col-medgrey);
+                font-size: var(--size-3xl);
+        
+            }
+            i.about__desk__icon:hover{
+                cursor: pointer;
+            background: radial-gradient(circle, #FFD700 50%, #8a6a1b 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+           }
+        .about__paragraph {
+            display: none;
+        }
+    
+        button.about__button {
+            display: none;
+        }
+    
+ }
+
+/* xl */
+@media (min-width: 1280px) {
+  
+        .desk .about__desk__title1, .desk .about__desk__title2 { 
+            font-size: var(--size-8xl)
+        }
+    
+        p.about__desk__paragraph {
+            font-size: var(--size-2xl);
+            margin-top: 0.9rem;
+        }
+    
+        i.about__desk__icon {
+            margin-top: 4rem;
+            color: var(--col-medgrey);
+            font-size: var(--size-4xl);
+    
+        }
+    }
+
+/* xxl */
+/* @media (min-width: 1536px) {

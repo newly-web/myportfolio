@@ -7,12 +7,102 @@
     <title>My porfolio </title>
   </head>
   <body>
-    <h1>Hey im whitney</h1>
-    <p>Lorem <a href="">ipsum dolor</a> sit amet consectetur adipisicing elit. Iure expedita facere aperiam odio commodi ad, ea fuga neque quos cumque vel quae dolores numquam inventore praesentium. <strong>Adipisci vitae magnam </strong>non!</p>
-    <button class="btn">HEYYYYY</button>
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">My Work</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <li class="header__dot"></li>
+        <button class=" header__resume btn">Resume</button>
+
+      </ul>
+      <button class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="about container">
+      <h2 class="about__sub">Hello, I'm</h2>
+     
+      <img class="about__img" src="./public/headshot.jpg" alt="" />
+      <h1 class="about__title">Whitney Nsegbe</h1>
+      <div class="desk">
+        <div class="one">
+          <h1 class="about__desk__title1"> Whitney</h1>
+          <p class="about__desk__paragraph">A <span>software engineering</span> student and a <span>&lt; Frontend developper
+              /&gt;</span></p>
+        </div>
+        <img class="about__desk__image" src="./public/portfolio-image-transparent.png" alt="" srcset="">
+        <div class="two">
+          <h1 class="about__desk__title2">Nsegbe</h1>
+          <p class="about__desk__paragraph">My goal is to create original websites and web applications that stand out and make an impact.</p>
+        </div>
+      </div>
+      <p class="about__paragraph">A  <span>software engineering</span> student, and a <span>&lt; Frontend developper /&gt;</span>. My goal is to create original website and web applications that stand out and make an impact. </p>
+      <div class="desk">
+        <i class="about__desk__icon fa-brands fa-linkedin"></i>
+        <i class="about__desk__icon fa-brands fa-github"></i>
+        <i class="about__desk__icon fa-solid fa-envelope"></i>
+      </div>
+      <button class="about__button btn">Let's talk!</button>
+    </section>
+    <section class="featured container section">
+    <h3 class="featured__subtitle">Most recent project</h3>
+    <div class="featured__wrapper">
+      <h2 class="featured__title">BlackSpoken</h2>
+      <a href="" target="_blank" class="featured__link"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59" />
+      </svg>
+      </a>
+    </div>
+      <p class="featured__description">BlackSpoken is a passion project built with Python to celebrate and amplify Black voices in the podcasting world. The project uses the Spotify API to fetch podcast data, allowing users to explore curated content that celebrates
+      diversity and Black excellence.</p>
+    <div class="featured__details">
+      <div class="featured__techstack">
+        <h3 class="techstack__title">Tech Stack</h3>
+        <ul class="techstack__list">
+          <li>Python</li>
+          <li>Html</li>
+          <li>Css</li>
+          <li>MySql</li>
+          <li>Flask</li>
+          <li>Spotify API</li>
+        </ul>
+      </div>
+      <div>
+      <h3>Project Type</h3>
+      <p>Fullstack Web Application</p>
+      </div>
+      <div>
+        <h3>Timeline</h3>
+        <p>Aug 2024-Nov 2024</p>
+      </div>
+    </div>
+    <div class="featured__images">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+    </div>
+    </section>
+    <!-- <section></section> -->
+  </main>
+      
+  
 
 
 
+
+
+
+
+    <script src="https://kit.fontawesome.com/f6b7ebe716.js" crossorigin="anonymous"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
