@@ -58,7 +58,24 @@ background: radial-gradient(circle, #FFD700 30%, #B8860B 100%);    padding: 0.5e
 .section{
     margin-top: 5rem;
 }
-
+.soon-btn{
+    display: inline-block;
+        font-weight: 600;
+        text-decoration: none;
+        letter-spacing: -0.05em;
+        background: radial-gradient(circle, #615b38 30%, #5a4309 100%);
+        padding: 0.5em 1em;
+        border-radius: 4px;
+        color: var(--col-darkgrey);
+        /* box-shadow:0px 10px 20px rgb(168, 162, 158, 0.5),
+                0 6px 6px rgb(168, 162, 158,0.5), 0 0 10px -10px var(--col-medgrey); */
+        transition: transform 0.9s box-shadow 0.5s;
+}
+.soon-btn:hover{
+    cursor: default;
+    box-shadow: none;
+    transform: none;
+}
 /* xs */
 @media (min-width: 475px) {
     .container{
