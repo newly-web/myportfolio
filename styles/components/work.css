@@ -40,11 +40,13 @@
     z-index: 1;
     transition: background-color 0.3s;
 }
-
 .work__project__image:hover::after {
-    background-color: rgba(92, 92, 92, 0.5);
-    cursor: pointer;
+    background-color: rgba(104, 104, 104, 0.5);
+    cursor: default;
 
+}
+.work__project__image.image-soon::after{
+        background-color: rgba(0, 0, 0, 0);
 }
 
 .work__project__description1,

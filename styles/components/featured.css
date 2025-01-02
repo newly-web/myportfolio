@@ -81,7 +81,6 @@
 }
 .featured__image__div:hover::after {
     background-color: rgba(92, 92, 92, 0.1);
-    cursor: pointer;
 
 }
 /* xs */

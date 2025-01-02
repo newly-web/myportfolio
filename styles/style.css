@@ -42,10 +42,17 @@ html{
 }
 
 body{
-    font-family: 'Satoshi', sans-serif;
     background-color: var(--col-darkgrey);
     color: var(--col-white);
+}   
+a,li,p,span{
+    font-family: 'Cabinet Grotesk', sans-serif;
 }
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Satoshi', sans-serif;
+} 
+    
+
 img,
 picture,
 video,
@@ -86,4 +93,18 @@ span{
 ul{
     list-style: none;
     padding: 0;
+}
+
+/* scrollbar */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: radial-gradient(circle, #FFD700 50%, #8a6a1b 100%);
+    
 }

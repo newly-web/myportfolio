@@ -45,6 +45,7 @@ background: radial-gradient(circle, #FFD700 30%, #B8860B 100%);    padding: 0.5e
     transform: translateY(-3px);
     box-shadow: 0px -5px 23px rgba(184, 134, 11, 0.4),
             0 1px 15px rgba(184, 134, 11, 0.3), 0 0 10px -10px var(--col-medgrey);
+    cursor: pointer;
 }
 
 .container{
@@ -53,7 +54,6 @@ background: radial-gradient(circle, #FFD700 30%, #B8860B 100%);    padding: 0.5e
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right:0.5rem;
-    border: 1px solid red;
 }
 .section{
     margin-top: 5rem;
@@ -76,6 +76,7 @@ background: radial-gradient(circle, #FFD700 30%, #B8860B 100%);    padding: 0.5e
     box-shadow: none;
     transform: none;
 }
+
 /* xs */
 @media (min-width: 475px) {
     .container{

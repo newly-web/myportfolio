@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,900&display=swap" rel="stylesheet">
+<link
+  href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,900&f[]=cabinet-grotesk@100,200,300,400,500,700,800&display=swap"
+  rel="stylesheet">
   <title>My porfolio </title>
 </head>
 
@@ -12,11 +14,11 @@
   <header class="header container">
     <nav>
       <ul class="header__menu">
-        <li><a href="#about">About</a></li>
+        <!-- <li><a href="#about">About</a></li> -->
         <li><a href="#projects">My Work</a></li>
         <li><a href="#contact">Contact Me</a></li>
         <li class="header__dot"></li>
-        <button class=" header__resume btn">Resume</button>
+        <a class="header__resume btn" href="https://docs.google.com/document/d/1oSBFghNv_Y4pI71s4k_mjhZjMnpCxIDLt0oQWJIXQ3k/export?format=pdf">Resume</a>
 
       </ul>
       <button class="header__bars">
@@ -27,6 +29,18 @@
       </button>
     </nav>
   </header>
+  <!-- mobile nav -->
+   <div class="mobile__nav">
+    <nav>
+      <ul class="mobile__nav__menu">
+        <li><a href="#projects" class="mobile__nav__link">My Work</a></li>
+        <li><a href="#contact" class="mobile__nav__link">Contact Me</a></li>
+        <li class="mobile__nav__line"></li>
+        <li class="mobile__nav__button"><a class="btn"
+          href="https://docs.google.com/document/d/1oSBFghNv_Y4pI71s4k_mjhZjMnpCxIDLt0oQWJIXQ3k/export?format=pdf">Resume</a></li>
+      </ul>
+    </nav>
+   </div>
   <main>
     <section class="about container">
       <h2 class="about__sub">Hello, I'm</h2>
@@ -51,17 +65,17 @@
           /&gt;</span>. My goal is to create original website and web applications that stand out and make an impact.
       </p>
       <div class="desk">
-        <i class="about__desk__icon fa-brands fa-linkedin"></i>
-        <i class="about__desk__icon fa-brands fa-github"></i>
-        <i class="about__desk__icon fa-solid fa-envelope"></i>
+        <i class="about__desk__icon fa-brands fa-linkedin"><a href="www.linkedin.com/in/whitney-nsegbe" target="_blank"></a></i>
+        <i class="about__desk__icon fa-brands fa-github"><a href="https://github.com/newly-web" target="_blank" rel="noopener noreferrer"></a></i>
+        <i class="about__desk__icon fa-solid fa-envelope"><a href="mailto:whitneynsegbe@gmail.com" target="_blank"></a></i>
       </div>
-      <button class="about__button btn">Let's talk!</button>
+      <a href="#contact" class="about__button btn">Let's talk!</a>
     </section>
     <section class="featured container section">
       <h3 class="featured__subtitle">Most recent project</h3>
       <div class="featured__wrapper">
         <h2 class="featured__title">BlackSpoken</h2>
-        <a href="" target="_blank" class="featured__link"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+        <a href="https://websitesbywhitney.pythonanywhere.com/" target="_blank" class="featured__link"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59" />
@@ -106,11 +120,11 @@
             alt="Blackspoken help "></div>
       </div> -->
     </section>
-    <section class="work container section">
+    <section class="work container section" id="projects">
       <h2 class="work__title">My Work</h2>
-      <p class="work__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis dolorum cum
-        beatae dicta tenetur, tempora illum reiciendis rerum. Soluta commodi enim dolore delectus. Officia facere
-        incidunt molestias deserunt pariatur.</p>
+      <p class="work__description">I’m a software engineering student, that means I code on my free time haha. Whether it’s
+      designing engaging websites, developing full-stack applications, or collaborating on group projects, I enjoy creating
+      tools that make a real impact. Here are some of my favs.</p>
 
       <div class="work__display">
 
@@ -122,11 +136,11 @@
           <p class="work__project__description2">The website acts as a demo, showcasing how the app could connect students with events that match their interests in order to make it easier for students to stay engaged on campus. This
           project is a true team effort, focused on creative ideas and collaboration to bring the concept to life.</p>
         
-        <a class='btn work__project__button' href="">Check it out</a>
+        <a class='btn work__project__button' href="https://seg-unifi.github.io/" target="_blank">Check it out</a>
         </div>
         <!-- project 2 -->
         <h2 class="work__project__title">Coming Soon: Neighborhood Watch</h2>
-        <div class="work__project__image work__image2"><img src="/public/seg-unifi.github.io.png" alt="unifi home page"></div>
+        <div class="work__project__image work__image2 image-soon"><img src="/public/Neigborhood Watch-coming soon.png" alt="unifi home page"></div>
         <div class="work__project__descriptions work__content2">        <h3 class="work__project__sub">Comming Soon: Neighborhood Watch</h3>
 
           <p class="work__project__description1">I’m looking forward to launching Neighborhood Watch and seeing the positive impact it can have on building safer, more connected
@@ -153,6 +167,14 @@
         </div> -->
       </div>
     </section>
+    <section class="section container contact" id="contact">
+      <h2>Stay in touch!</h2>
+      <p>If you’ve liked what you’ve seen and want more (or if you have questions that are keeping you up at night), hit me up! I can help out with projects,
+      answer your questions, or just have a virtual snack break.</p>
+      <a href="https://linktr.ee/whitneynsegbe" target="_blank" class="btn">Reach out</a>
+    </section>
+    <section class="container section footer"><h4>
+      |Whitney Nsegbe|</h4></section>
   </main>
 
 

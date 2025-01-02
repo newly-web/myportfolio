@@ -110,7 +110,8 @@
         }
             div.one{
                 margin-top: 9rem;
-                    margin-right: -5rem;
+                margin-left:2em;
+                margin-right: -8em;
                     align-self: top;
             }
             .desk .about__desk__title1{
@@ -127,6 +128,7 @@
             }
             div.two{
                 align-self: center;
+                margin-left: -3em;
             }
             .about__desk__title2{
                 background: radial-gradient(circle, #FFD700 50%, #8a6a1b 100%);
@@ -165,7 +167,7 @@
             display: none;
         }
     
-        button.about__button {
+        a.about__button {
             display: none;
         }
     
