@@ -1,4 +1,4 @@
-:root{
+:root {
     /* gradients
         -gold:
         background: radial-gradient(circle, #FFD700 50%, #8a6a1b 100%);
@@ -7,89 +7,105 @@
             background-clip: text;
             text-fill-color: transparent;
     */
-    --col-darkgrey:#151514;
-    --col-white:#d2d2d2;
-    --col-medgrey:#555555;
-    --col-gold:#917812;
+    --col-darkgrey: #151514;
+    --col-white: #d2d2d2;
+    --col-medgrey: #555555;
+    --col-gold: #917812;
     /* *med grey rgb val: rgb(92, 92, 92)*/
     /* *white rgb val: rgb(210, 210, 210)  */
 
 
     /* sizes */
-    --size-xxs:0.5rem;
-    --size-xs:0.75rem;
-    --size-sm:0.875rem;
-    --size-base:1rem;
-    --size-lg:1.125rem;
-    --size-xl:1.25rem;
-    --size-2xl:1.5rem;
-    --size-3xl:1.875rem;
-    --size-4xl:2.25rem;
-    --size-5xl:3rem;
-    --size-6xl:3.75rem;
-    --size-7xl:4.5rem;
-    --size-8xl:6rem;
-    --size-9xl:8rem;
-    --size-10xl:10rem;
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
 
 }
-*{
+
+* {
     margin: 0;
     line-height: calc(1em + 0.5rem);
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: var(--col-darkgrey);
     color: var(--col-white);
-}   
-a,li,p,span{
+}
+
+a,
+li,
+p,
+span {
     font-family: 'Cabinet Grotesk', sans-serif;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Satoshi', sans-serif;
-} 
-    
+}
+
 
 img,
 picture,
 video,
 canvas,
-svg{
+svg {
     display: block;
     max-width: 100%;
     user-select: none;
 }
 
-button{
+button {
     display: inline-block;
     padding: 0;
-    border:none;
+    border: none;
     background: none;
     cursor: pointer;
     color: inherit;
 }
-a{
+
+a {
     color: var(--col-white);
     text-decoration: none;
 }
-strong{
-    background:radial-gradient(circle, #FFD700 50%, #8a6a1b 100%);
-        /* Use the gradient variable */
-        --webkit-background-clip:text;
-            background-clip: text;
-        -webkit-text-fill-color: transparent;
-        /* Make the fill color transparent */
-        /* Standard property for modern browsers */
-        text-fill-color: transparent;
+
+strong {
+    background: radial-gradient(circle, #FFD700 50%, #8a6a1b 100%);
+    /* Use the gradient variable */
+    --webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Make the fill color transparent */
+    /* Standard property for modern browsers */
+    text-fill-color: transparent;
 }
-span{
+
+span {
     font-weight: 600;
     color: var(--col-gold);
 }
-ul{
+
+ul {
     list-style: none;
     padding: 0;
 }
@@ -105,5 +121,5 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background: radial-gradient(circle, #FFD700 50%, #8a6a1b 100%);
-    
+
 }

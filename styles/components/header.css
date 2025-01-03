@@ -1,4 +1,4 @@
-.header{
+.header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -7,16 +7,18 @@
     position: relative;
     z-index: 9999;
 }
-.header__menu{
+
+.header__menu {
     display: none;
 }
-    
-.header__bars{
+
+.header__bars {
     color: #FFD700;
     margin-right: 0.5em;
     width: var(--size-2xl);
     display: block;
 }
+
 /************************** */
 /* Media Queries */
 /* xs */
@@ -30,7 +32,7 @@
 
 /* md */
 @media (min-width: 768px) {
-.header__menu {
+    .header__menu {
         display: flex;
         align-items: center;
         gap: 2em;
@@ -64,22 +66,23 @@
     .header__resume {
         font-size: var(--size-sm);
     }
-    .header__bars{
+
+    .header__bars {
         display: none;
     }
-    } 
+}
 
 /* lg */
 @media (min-width: 1024px) {
-.header__menu li {
+    .header__menu li {
         font-size: var(--size-md);
-       
+
     }
 
     .header__resume {
         font-size: var(--size-md);
     }
-    }
+}
 
 /* xl */
 /* @media (min-width: 1280px) {

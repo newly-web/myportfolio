@@ -1,22 +1,24 @@
-.contact{
+.contact {
     text-align: center;
-    
+
 }
-.contact h2{
+
+.contact h2 {
     font-size: var(--size-base);
-     background: radial-gradient(circle, #FFD700 50%, #8a6a1b 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
+    background: radial-gradient(circle, #FFD700 50%, #8a6a1b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
-.contact p{
+
+.contact p {
     display: block;
     margin: 1em auto;
-    max-width:  60ch;
+    max-width: 60ch;
     font-size: var(--size-sm);
     color: var(--col-medgrey);
 }
+
 /* Media Queries */
 /* xs */
 /* @media (min-width: 475px) {  
@@ -26,17 +28,18 @@
 /* sm */
 @media (min-width: 640px) {
     .contact h2 {
-            font-size: var(--size-3xl);
-        }
-    
-        .contact p {
-            font-size: var(--size-xl);
-            color: var(--col-medgrey);
-        }
-       .contact a {
-            font-size: var(--size-xl);
-        }
+        font-size: var(--size-3xl);
     }
+
+    .contact p {
+        font-size: var(--size-xl);
+        color: var(--col-medgrey);
+    }
+
+    .contact a {
+        font-size: var(--size-xl);
+    }
+}
 
 /* md */
 /* @media (min-width: 768px) {
