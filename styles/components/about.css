@@ -116,14 +116,11 @@
             }
             .desk .about__desk__title1{
                 background: radial-gradient(circle, #FFD700 50%, #8a6a1b 100%);
-                    /* Use the gradient variable */
-                    -webkit-background-clip: text;
-                    /* Clip the background to the text */
-                    -webkit-text-fill-color: transparent;
-                    /* Make the fill color transparent */
-                    background-clip: text;
-                    /* Standard property for modern browsers */
-                    text-fill-color: transparent;
+-webkit-background-clip: text; /* Correct usage of WebKit prefix */
+-webkit-text-fill-color: transparent; /* Transparent text fill for WebKit browsers */
+background-clip: text; /* Standard version for modern browsers */
+color: transparent; /* Fallback */
+
                 font-size: var(--size-7xl)
             }
             div.two{

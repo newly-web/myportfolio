@@ -35,7 +35,7 @@
 }
 *{
     margin: 0;
-    line-height: calc(1em+0.5rem);
+    line-height: calc(1em + 0.5rem);
 }
 html{
     scroll-behavior: smooth;
@@ -78,11 +78,10 @@ a{
 strong{
     background:radial-gradient(circle, #FFD700 50%, #8a6a1b 100%);
         /* Use the gradient variable */
-        -webkit-background-clip: text;
-        /* Clip the background to the text */
+        --webkit-background-clip:text;
+            background-clip: text;
         -webkit-text-fill-color: transparent;
         /* Make the fill color transparent */
-        background-clip: text;
         /* Standard property for modern browsers */
         text-fill-color: transparent;
 }

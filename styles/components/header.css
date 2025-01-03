@@ -8,7 +8,7 @@
     z-index: 9999;
 }
 .header__menu{
-    display: hide;
+    display: none;
 }
     
 .header__bars{
