@@ -27,4 +27,4 @@ const mobileNavigation = () => {
         });
     });
 }
-export default mobileNavigation
+export default mobileNavigation;
