@@ -1,6 +1,5 @@
 .mobile__nav {
     position: absolute;
-    border: 1px solid rgb(28, 167, 28);
     top: 0;
     right: 0;
     z-index: 999;
